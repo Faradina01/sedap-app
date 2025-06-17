@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Salad Buah Segar",
+    "price": 25000,
+    "image": "bunga.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Smoothie Mangga",
+    "price": 18000,
+    "image": "400.jpg"
+  }
+]
