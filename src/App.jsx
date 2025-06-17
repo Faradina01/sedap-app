@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import './assets/tailwind.css';
 import { Route, Routes } from 'react-router-dom';
-import Loading from './components/LOading.jsx';
+import Loading from './components/Loading.jsx';
 
 // Lazy Loaded Pages
 const Dashboard = React.lazy(() => import("./pages/Dashboard"));
@@ -14,7 +14,7 @@ const ErrorPage = React.lazy(() => import("./pages/ErrorPage.jsx"));
 // Layouts
 const MainLayout = React.lazy(() => import("./layouts/MainLayout.jsx"));
 const AuthLayout = React.lazy(() => import("./layouts/AuthLayout.jsx"));
-const GuestLayout = React.lazy(() => import("./layouts/GuestLayout.jsx")); // ✅ Tambahan ini
+const GuestLayout = React.lazy(() => import("./layouts/GuestLayout.jsx")); // 
 
 // Auth Pages
 const Login = React.lazy(() => import("./pages/auth/Login.jsx"));
@@ -22,7 +22,7 @@ const Register = React.lazy(() => import("./pages/auth/Register.jsx"));
 const Forgot = React.lazy(() => import("./pages/auth/Forgot.jsx"));
 
 // Guest Page
-const Guest = React.lazy(() => import("./pages/guest.jsx")); // ✅ Tambahan ini
+const Guest = React.lazy(() => import("./pages/guest.jsx")); // 
 
 function App() {
 return (
@@ -43,7 +43,7 @@ return (
       <Route path="/forgot" element={<Forgot />} />
     </Route>
 
-    {/* ✅ GUEST ROUTE (INI YANG BELUM ADA) */}
+    {/* GUEST ROUTE  */}
     <Route element={<GuestLayout />}>
       <Route path="/guest" element={<Guest />} />
     </Route>
